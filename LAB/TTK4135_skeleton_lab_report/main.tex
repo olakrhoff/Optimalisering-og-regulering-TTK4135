@@ -1,0 +1,51 @@
+\documentclass[11pt, a4paper, USenglish]{article} % change ``USenglish'' to ``norsk'' if applicable.
+
+\usepackage{graphicx} % Provides the \includegraphics command.
+\usepackage{hyperref} % Provides clickable links. Always load last, but before cleveref.
+
+\usepackage{amsmath}
+
+%% To easily include matlab code, I would recommend to have a look at this answer https://tex.stackexchange.com/a/158816 which has nice examples.
+
+%% It uses: https://ctan.org/pkg/matlab-prettifier
+
+\begin{document}
+
+% Titlepage
+\title{LaTeX Lab Report Skeleton}
+\author{Student 70000\\ Student 70001}
+\date{January 1, 1970}
+\begin{titlepage}
+    \maketitle
+    \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/itk_ntnu}\\
+    Department of Engineering Cybernetics
+    \end{figure}
+    \thispagestyle{empty}
+\end{titlepage}
+
+% TOC
+\newpage
+\tableofcontents
+\thispagestyle{empty} % Avoid page numbering on the table of contents.
+
+
+% Main content
+\newpage
+\setcounter{page}{1}
+\include{evaluation_info} % <--- delete/comment this before handing in the final PDF!
+\include{task_10_2}
+\include{task_10_3}
+\include{task_10_4}
+
+
+
+% References
+%\newpage
+%\addcontentsline{toc}{section}{References}
+%\bibliographystyle{unsrt}
+%\bibliography{bibliography.bib}
+%\label{sec:bibliography}
+
+\end{document}
