@@ -1,2 +1,5 @@
 .DS_Store
 Nocedal-Wright2006_Book_NumericalOptimization.pdf
+LAB/handout_files/passing_data/slprj/*
+*.eps
+*.fig

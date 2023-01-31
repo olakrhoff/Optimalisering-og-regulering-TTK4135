@@ -36,8 +36,15 @@ time_steps = [0:h:T]';
 %   from Simulink, and finally plot data.
 
 % your code goes here
+data = timeseries([x_travel_ref, x_elevation_ref], time_steps);
 
+loaded_data = load("dummt_test.mat").dummy_test;
 
+plot(loaded_data(1,:), loaded_data(2:3,:));
+legend('Travel','Elevation');
+xlabel('Time'), ylabel('Radiens');
+title('Travel and elevation over time');
+saveas(gcf, "figure", "epsc");
 %% Fake-model parameters (You should not change this part)
 A = [-0.98, 0; 0, -0.9];
 B = [1 0; 0,0];
