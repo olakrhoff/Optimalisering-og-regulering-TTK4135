@@ -51,13 +51,13 @@ plot(x_1, x_2, 'k');
 
 x1_opt = 1.8;
 x2_opt = 4.4;
-%plot(x1_opt, x2_opt, 'ok');
+plot(x1_opt, x2_opt, 'ok');
 it1_x1 = 0;
 it1_x2 = 0;
-%plot(it1_x1, it1_x2, 'ok');
+plot(it1_x1, it1_x2, 'ok');
 it2_x1 = 4;
 it2_x2 = 0;
-%plot(it2_x1, it2_x2, 'ok');
+plot(it2_x1, it2_x2, 'ok');
 
 c1_x1 = -2;
 c1_x2 = -1;
@@ -87,13 +87,13 @@ d_point = point2_arrow1-point1_arrow;
 %quiver(point1_arrow(1), point1_arrow(2), d_point(1), d_point(2), 0, 'black')
 
 
-text_offset = 0.05;
+text_offset = 0.1;
 %text(x1_opt+c1_x1-5*text_offset,x2_opt+c1_x2+0*text_offset, '$\nabla c_1$', 'fontsize', fontsize,'interpreter','latex')
 %text(x1_opt+c2_x1-3*text_offset,x2_opt+c2_x2-2*text_offset, '$\nabla c_2$', 'fontsize', fontsize,'interpreter','latex')
 %text(x1_opt+f_x1-1*text_offset,x2_opt+f_x2-2*text_offset, '$\nabla f$', 'fontsize', fontsize,'interpreter','latex')
-%text(it1_x1+1*text_offset,it1_x2+2*text_offset, 'Iteration 1', 'fontsize', fontsize)
-%text(it2_x1+1*text_offset,it2_x2+2*text_offset, 'Iteration 2', 'fontsize', fontsize)
-%text(x1_opt+1*text_offset,x2_opt+2*text_offset, 'Iteration 3', 'fontsize', fontsize)
+text(it1_x1+1*text_offset,it1_x2+2*text_offset, 'Iteration 1', 'fontsize', fontsize)
+text(it2_x1+1*text_offset,it2_x2+2*text_offset, 'Iteration 2', 'fontsize', fontsize)
+text(x1_opt+1*text_offset,x2_opt+2*text_offset, 'Iteration 3', 'fontsize', fontsize)
 
 xlabel('x_1');
 ylabel('x_2');
