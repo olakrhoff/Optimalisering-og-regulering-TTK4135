@@ -1,4 +1,3 @@
-
 k1 = 1;
 k2 = 1;
 k3 = 1;
@@ -10,12 +9,7 @@ B = [0;
 Q = [4 0;
      0 4];
 R = 1;
-N = 0;
 
-
-
-
-[K,S,e] = dlqr(A,B,Q/2,R/2,N);
-K
-
-eig(A-B*K)
+% Cost function
+[~,P,~] = dlqr(A,B,Q/2,R/2,[]); % Find the Riccati matrix P 
+P
